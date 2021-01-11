@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #cf4646;
+    padding: 20px 0;
+}
+
+.imageContainer {
+    position: relative;
+    width: 235px;
+    height: 50px;
+}

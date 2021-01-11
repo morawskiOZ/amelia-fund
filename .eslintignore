@@ -1,0 +1,14 @@
+node_modules
+
+*.d.ts
+
+next.config.js
+
+public
+out
+out_functions
+out_publish
+.next
+_app.tsx
+_document.tsx
+worker
