@@ -14,7 +14,13 @@ export const Header = ({}: Props): ReactElement => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image src="/images/logo.png" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/logo.png"
+          layout="fill"
+          objectFit="cover"
+          alt=""
+          quality={75}
+        />
       </a>
     </header>
   )

@@ -21,10 +21,12 @@ const Home = (): ReactElement => (
       </Center>
       <div className={styles.imageContainer}>
         <Image
+          alt=""
           src="/images/Amelia.png"
           layout="responsive"
           width={700}
           height={475}
+          quality={75}
         />
       </div>
       <section className={styles.textContainer}>
@@ -43,12 +45,9 @@ const Home = (): ReactElement => (
         <p className={styles.infoText}>
           <Center column>
             <Text color="black">Jak przekazać swój 1% podatku?</Text>{' '}
-            <Text color="black">
-              Nic prostrzego! Szczegółowe instrukcje na oficjalnym portalu
-              podatkowym:
-            </Text>{' '}
+            <Text color="black">Nic prostrzego! Zaglądnij na:</Text>{' '}
             <a href="https://www.podatki.gov.pl/pit/twoj-e-pit/jak-przekazac-1-podatku-w-usludze-twoj-e-pit/">
-              Instrukcja
+              Szczegółowe instrukcja na oficjalnym portalu podatkowym
             </a>
           </Center>
         </p>
