@@ -16,7 +16,7 @@ const Home = (): ReactElement => (
     <section className={styles.intro}>
       <Center>
         <Text fontWeight={300} color="#474242" fontSize={40}>
-          Moje życie, <Text fontSize={40}>Twój 1%</Text>
+          Moje życie, <Text fontSize={40}>Twój&nbsp;1%</Text>
         </Text>
       </Center>
       <div className={styles.imageContainer}>
