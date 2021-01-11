@@ -25,3 +25,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+p {
+  margin: 0;
+}
+
+:root {
+  --main-color: #c10041;
+}

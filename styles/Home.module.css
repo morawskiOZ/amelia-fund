@@ -1,0 +1,30 @@
+.intro {
+  margin: 20px 0;
+}
+
+.imageContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.textContainer {
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.alertText {
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 20px 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.infoText {
+  max-width: 700px;
+  padding: 0 20px;
+  text-align: justify;
+  margin: 20px auto 20px;
+}
