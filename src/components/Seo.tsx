@@ -7,7 +7,7 @@ export const Seo: FC = () => {
   return (
     <Head>
       <title>{siteTitle}</title>
-      <html lang="en" />
+      <html lang="pl" />
       <meta name="description" content={siteDesc} />
       <meta property="og:image" content="src" />
       <meta name="og:title" content={siteTitle} />

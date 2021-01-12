@@ -5,7 +5,7 @@ import { Text } from './Text/Text'
 
 export const AlertText: FC = () => {
   return (
-    <p className={styles.alertText}>
+    <div className={styles.alertText}>
       <Center column>
         <Text fontSize={24} color="white" fontWeight={700}>
           Przekaż 1%
@@ -26,6 +26,6 @@ export const AlertText: FC = () => {
           Amelia Morawska
         </Text>
       </Center>
-    </p>
+    </div>
   )
 }

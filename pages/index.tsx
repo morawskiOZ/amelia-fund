@@ -26,7 +26,7 @@ const Home = (): ReactElement => (
         />
       </div>
       <section className={styles.textContainer}>
-        <p className={styles.infoText}>
+        <div className={styles.infoText}>
           <Text color="black">
             Drodzy przyjaciele! Prosimy o przekazanie 1% podatku na dodatkowe
             koszty leczenia naszej córeczki Amelii. Amelia choruje na ostrą
@@ -36,9 +36,9 @@ const Home = (): ReactElement => (
             - dodatkowych leków - medycznych środków do higieny osobistej -
             rehabilitacji Dziękujemy za wsparcie! Rodzice
           </Text>
-        </p>
+        </div>
         <AlertText />
-        <p className={styles.infoText}>
+        <div className={styles.instructions}>
           <Center column>
             <Text color="black">Jak przekazać swój 1% podatku?</Text>{' '}
             <Text color="black">Nic prostrzego! Zaglądnij na:</Text>{' '}
@@ -49,8 +49,8 @@ const Home = (): ReactElement => (
               Szczegółowe instrukcja na oficjalnym portalu podatkowym
             </a>
           </Center>
-        </p>
-        <p className={styles.detailsText}>
+        </div>
+        <div className={styles.detailsText}>
           <Center column>
             <Text fontWeight={700} fontSize={24}>
               Możesz również przekazać darowiznę
@@ -68,7 +68,7 @@ const Home = (): ReactElement => (
               </Text>
             </Text>
           </Center>
-        </p>
+        </div>
       </section>
     </section>
   </Layout>
