@@ -11,7 +11,7 @@ interface Props {
 
 export const Text = ({
   color = '#cf4646',
-  fontSize = 16,
+  fontSize,
   children,
   fontWeight = 400,
 }: Props): ReactElement => {

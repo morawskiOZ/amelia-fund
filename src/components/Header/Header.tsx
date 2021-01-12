@@ -18,8 +18,8 @@ export const Header = ({}: Props): ReactElement => {
           src="/images/logo.png"
           layout="fill"
           objectFit="cover"
-          alt=""
           quality={75}
+          alt="logo z linkiem do fundacji NaRatunek"
         />
       </a>
     </header>

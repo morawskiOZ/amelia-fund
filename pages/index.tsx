@@ -1,8 +1,6 @@
-import Head from 'next/head'
 import { ReactElement } from 'react'
 import Image from 'next/image'
 import Layout from '../src/components/layout'
-import { siteTitle } from '../src/constants'
 import { Text } from '../src/components/Text/Text'
 import { Center } from '../src/components/Positioners/Center'
 import styles from '../styles/Home.module.css'
@@ -10,9 +8,6 @@ import { AlertText } from '../src/components/AlertText'
 
 const Home = (): ReactElement => (
   <Layout>
-    <Head>
-      <title>{siteTitle}</title>
-    </Head>
     <section className={styles.intro}>
       <Center>
         <Text fontWeight={300} color="#474242" fontSize={40}>
@@ -22,11 +17,12 @@ const Home = (): ReactElement => (
       <div className={styles.imageContainer}>
         <Image
           alt=""
-          src="/images/Amelia.png"
+          src="/images/Amelia.jpg"
           layout="responsive"
           width={700}
           height={475}
-          quality={75}
+          quality={50}
+          objectFit="contain"
         />
       </div>
       <section className={styles.textContainer}>
@@ -46,30 +42,33 @@ const Home = (): ReactElement => (
           <Center column>
             <Text color="black">Jak przekazać swój 1% podatku?</Text>{' '}
             <Text color="black">Nic prostrzego! Zaglądnij na:</Text>{' '}
-            <a href="https://www.podatki.gov.pl/pit/twoj-e-pit/jak-przekazac-1-podatku-w-usludze-twoj-e-pit/">
+            <a
+              href="https://www.podatki.gov.pl/pit/twoj-e-pit/jak-przekazac-1-podatku-w-usludze-twoj-e-pit/"
+              style={{ padding: '15px 0', textAlign: 'center' }}
+            >
               Szczegółowe instrukcja na oficjalnym portalu podatkowym
             </a>
           </Center>
         </p>
-        {/* <p className={styles.detailsText}> */}
-        {/*  <Center column> */}
-        {/*    <Text fontWeight={700} fontSize={24}> */}
-        {/*      Przekaż darowiznę */}
-        {/*    </Text>{' '} */}
-        {/*    <Text fontSize={20}> */}
-        {/*      konto imienne:{' '} */}
-        {/*      <Text fontWeight={700} fontSize={20}> */}
-        {/*        11 1160 2202 0000 0001 0214 2867 */}
-        {/*      </Text> */}
-        {/*    </Text> */}
-        {/*    <Text fontSize={20}> */}
-        {/*      + tytuł wpłaty:{' '} */}
-        {/*      <Text fontWeight={700} fontSize={24}> */}
-        {/*        Amelia Morawska */}
-        {/*      </Text> */}
-        {/*    </Text> */}
-        {/*  </Center> */}
-        {/* </p> */}
+        <p className={styles.detailsText}>
+          <Center column>
+            <Text fontWeight={700} fontSize={24}>
+              Możesz również przekazać darowiznę
+            </Text>{' '}
+            <Text fontSize={20}>
+              konto imienne:{' '}
+              <Text fontWeight={700} fontSize={20}>
+                11 1160 2202 0000 0001 0214 2867
+              </Text>
+            </Text>
+            <Text fontSize={20}>
+              + tytuł wpłaty:{' '}
+              <Text fontWeight={700} fontSize={24}>
+                Amelia Morawska
+              </Text>
+            </Text>
+          </Center>
+        </p>
       </section>
     </section>
   </Layout>
