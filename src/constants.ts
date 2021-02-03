@@ -1,3 +1,3 @@
-export const siteTitle = 'Wspomoż Amlkę w walce z białaczką, przekaż 1% podatku'
+export const siteTitle = 'Pomóż Amelii Morawskiej wygrać z nowotworem!'
 export const siteDesc =
-  'Proszę przekaż swój 1% podatku na walkę Amelki z białaczką. Środki są potrzebne na zakup środków ochrony i pielęgnacji do wkłucia centralnego (tzw. Broviac), leków i środków do higieny osobistej oraz rehabilitację'
+  'Amelia Morawska ma 4 lata i choruję na ostrą białaczkę. Proszę przekaż swój 1% podatku żeby wspomóc ją w walce z chorobę'
