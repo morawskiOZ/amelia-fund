@@ -28,25 +28,36 @@ const Home = (): ReactElement => (
       <section className={styles.textContainer}>
         <div className={styles.infoText}>
           <Text color="black">
-            Drodzy przyjaciele! Prosimy o przekazanie 1% podatku na dodatkowe
-            koszty leczenia naszej córeczki Amelii. Amelia choruje na ostrą
-            białaczkę limfoblastyczną. Leczenie trwa min. 2 lata. Koszt głównej
-            terapii pokrywa Przylądek Nadziei, mimo to pozostają koszty: -
-            środków ochrony i pielęgnacji do wkłucia centralnego (tzw. Broviac)
-            - dodatkowych leków - medycznych środków do higieny osobistej -
-            rehabilitacji Dziękujemy za wsparcie! Rodzice
+            <div className={styles.marginBottom}>
+              <Text color="black" fontWeight={700}>
+                Drodzy przyjaciele!
+              </Text>
+            </div>
+            Prosimy o przekazanie 1% podatku na dodatkowe koszty leczenia naszej
+            córeczki Amelii. Amelia choruje na ostrą białaczkę limfoblastyczną.
+            Leczenie trwa min. 2 lata. Koszt głównej terapii pokrywa Przylądek
+            Nadziei, mimo to pozostają koszty: środków ochrony i pielęgnacji do
+            wkłucia centralnego (tzw. Broviac), dodatkowych leków, medycznych
+            środków do higieny osobistej oraz rehabilitacji.
+            <div className={styles.thanksNote}>
+              <Text color="black" fontWeight={900}>
+                Dziękujemy za wsparcie! <br /> Rodzice
+              </Text>
+            </div>
           </Text>
         </div>
         <AlertText />
         <div className={styles.instructions}>
           <Center column>
-            <Text color="black">Jak przekazać swój 1% podatku?</Text>{' '}
+            <Text color="black" className={styles.marginBottom}>
+              Jak przekazać swój 1% podatku?
+            </Text>
             <Text color="black">Nic prostrzego! Zaglądnij na:</Text>{' '}
             <a
               href="https://www.podatki.gov.pl/pit/twoj-e-pit/jak-przekazac-1-podatku-w-usludze-twoj-e-pit/"
               style={{ padding: '15px 0', textAlign: 'center' }}
             >
-              Szczegółowe instrukcja na oficjalnym portalu podatkowym
+              Szczegółowe instrukcję na oficjalnym portalu podatkowym
             </a>
           </Center>
         </div>

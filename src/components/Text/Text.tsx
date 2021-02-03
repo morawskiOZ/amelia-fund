@@ -7,6 +7,7 @@ interface Props {
   color?: string
   fontSize?: number
   fontWeight?: 500 | 400 | 700 | 900 | 300
+  className?: string
 }
 
 export const Text = ({
@@ -14,9 +15,14 @@ export const Text = ({
   fontSize,
   children,
   fontWeight = 400,
+  ...rest
 }: Props): ReactElement => {
   return (
-    <span className={styles.text} style={{ color, fontSize, fontWeight }}>
+    <span
+      className={styles.text}
+      style={{ color, fontSize, fontWeight }}
+      {...rest}
+    >
       {children}
     </span>
   )
